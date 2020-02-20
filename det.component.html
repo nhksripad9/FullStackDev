@@ -1,0 +1,23 @@
+<div class="col-md-12" align="center">
+    Select City:
+    <select (change)="dis($event)">
+        <option value="1">Hyderabad</option>
+        <option value="2">Delhi</option>
+        <option value="3">Chicago</option>
+    </select>
+<br><br><br>
+<table class="table" cellspacing="5">
+    <thead>
+        <tr>
+            <td>Low </td>
+            <td>Min </td>
+            <td>High </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr >
+            <td *ngFor="let li of item">{{li}} <sup>o</sup>C </td> 
+        </tr>
+    </tbody>
+</table>
+</div>
